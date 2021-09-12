@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 列表下拉式選單 */
+#all{
+    display: flex;
+}
+
+#one{
+    width: 300px;
+    margin-left: 20px;
+}
+
+#one h1{
+    /* font-size: 36px; */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+#one h3.group_title{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 5px 5px 5px 20px;
+    background-image: url('./images/down.png');
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: left 5px center;
+    cursor: pointer;
+}
+#one ul{
+    list-style: none;
+    display: block;
+}
+#one li{
+    border: 1px solid black;
+    padding: 5px;
+}
+#one li.active{
+    background-color: purple;
+    color: white;
+}
+
+/* 頁籤切換 */
+#two .container{
+    margin: 20px;
+    width: 350px;
+    border: 1px solid black;
+    height: 300px;
+    font-size: 0;
+}
+#two h1{
+    font-size: 36px;
+    text-align: center;   
+}
+
+#two .title{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#two .title a{
+    color: white;
+    background-color: black;
+    padding: 8px 17px 8px 17px;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 16px;
+}
+#two .title a.choice{
+    background-color: white;
+    color: black;
+}
+#two .content{
+    margin: 10px 5px 5px 5px;
+
+}
+#two .content ul{
+    list-style: none;
+    display: none;
+}
+#two .content ul li{
+    padding: 6px;
+    border-bottom: 1px solid gray;
+    margin: 0 10px 0 10px;
+    font-size: 13px;
+}
+#two .content ul li span{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 800;
+}
+#two .content ul li a{
+    text-decoration: none;
+}
+
+/* 單個按鈕控制圖示 */
+#three #circle img{
+    width: 300px;
+}
